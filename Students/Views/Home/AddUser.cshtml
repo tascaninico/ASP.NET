@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="../../Content/Site.css" />
+    <title>Покупка</title>
+</head>
+<body>
+    <div>
+        <h1>Форма добавления студента</h1>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.Id" name="Id" />
+            <table>
+                <tr>
+                    <td><p>Введите имя студента</p></td>
+                    <td><input type="text" name="firstname" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите фамилию студента</p></td>
+                    <td><input type="text" name="lastname" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите номер группы студента</p></td>
+                    <td><input type="text" name="group" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите факультет студента</p></td>
+                    <td><input type="text" name="faculty" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите почту студента</p></td>
+                    <td><input type="text" name="email" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите оценку по линейной алгебре студента</p></td>
+                    <td><input type="text" name="mark1" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите математическому анализу студента</p></td>
+                    <td><input type="text" name="mark2" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите английский язык студента</p></td>
+                    <td><input type="text" name="mark3" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите основы базы данных студента</p></td>
+                    <td><input type="text" name="mark4" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите теория вероятности студента</p></td>
+                    <td><input type="text" name="mark5" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Добавить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+table {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    background: #F8F8F8;
+}
+
+table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #EDEDED;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+table tr th:first-child, .table tr td:first-child {
+    border-left: 1px solid #ddd;
+}
+
+table tr th:last-child, .table tr td:last-child {
+    border-right: 1px solid #ddd;
+}
+
+table thead tr th:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+table thead tr th:last-child {
+    border-radius: 0 20px 0 0;
+}
+
+table tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table tbody tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 20px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0 0 20px 0;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.best {
+    background-color: #96ffcb !important;
+}
+
+.worst {
+    background-color: #ffb3b3 !important;
+}

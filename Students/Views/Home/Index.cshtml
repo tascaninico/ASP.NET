@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="../../Content/Site.css" />
+    <title>Система учета успеваемости студентов</title>
+</head>
+<body>
+    <div>
+        <h1>Студенты</h1>
+        <table>
+            <tr>
+                <td><p>Имя</p></td>
+                <td><p>Фамилия</p></td>
+                <td><p>Номер группы</p></td>
+                <td><p>Факультет</p></td>
+                <td><p>Email</p></td>
+                <td><p>Линейная алгебра</p></td>
+                <td><p>Математический анализ</p></td>
+                <td><p>Английский язык</p></td>
+                <td><p>Основы базы данных</p></td>
+                <td><p>Теория вероятности</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Students)
+            {
+                <tr>
+                    <td><p>@b.firstName</p></td>
+                    <td><p>@b.lastName</p></td>
+                    <td><p>@b.group</p></td>
+                    <td><p>@b.faculty</p></td>
+                    <td><p>@b.email</p></td>
+                    <td><p>@b.mark1</p></td>
+                    <td><p>@b.mark2</p></td>
+                    <td><p>@b.mark3</p></td>
+                    <td><p>@b.mark4</p></td>
+                    <td><p>@b.mark5</p></td>
+                    <td><p><a href="/Home/ChangeUser?id=@b.Id&firstName=@b.firstName
+                              &lastName=@b.lastName&email=@b.email&group=@b.group&faculty=@b.faculty
+                              &mark1=@b.mark1&mark2=@b.mark2&mark3=@b.mark3&mark4=@b.mark4&mark5=@b.mark5">
+                        Изменить</a></p></td>
+                </tr>
+            }
+            <tr>
+                <td><p><a href="/Home/AddUser">Добавить</a></p></td>
+                <td><p><a href="/Home/BestWorst">Вывести 5 лучших и 5 худших студентов</a></p></td>
+                <td><p><a href="/Home/WriteFile">Вывести список студентов в файл</a></p></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
